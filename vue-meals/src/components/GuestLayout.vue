@@ -1,5 +1,5 @@
 <template>
-  Page de connexion
+  Login Page
 </template>
 
 <script setup>

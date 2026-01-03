@@ -4,10 +4,10 @@
     <img :src="meal.strMealThumb" :alt="meal.strMeal" class="max-w-[100%]">
     <div class="grid grid-cols-1 sm:grid-cols-3 text-lg py-2">
       <div>
-        <strong class="font-bold">Catégorie:</strong> {{ meal.strCategory }}
+        <strong class="font-bold">Category:</strong> {{ meal.strCategory }}
       </div>
       <div>
-        <strong class="font-bold">Région:</strong> {{ meal.strArea }}
+        <strong class="font-bold">Area:</strong> {{ meal.strArea }}
       </div>
       <div>
         <strong class="font-bold">Tags:</strong> {{ meal.strTags }}
@@ -20,7 +20,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2">
       <div>
-        <h2 class="text-2xl font-semibold mb-2">Ingrédients</h2>
+        <h2 class="text-2xl font-semibold mb-2">Ingredients</h2>
         <ul>
           <template v-for="(el, ind) of new Array(20)">
             <li v-if="meal[`strIngredient${ind + 1}`]">
@@ -30,7 +30,7 @@
         </ul>
       </div>
       <div>
-        <h2 class="text-2xl font-semibold mb-2">Mesures</h2>
+        <h2 class="text-2xl font-semibold mb-2">Measures</h2>
         <ul>
           <template v-for="(el, ind) of new Array(20)">
             <li v-if="meal[`strMeasure${ind + 1}`]">
@@ -46,7 +46,7 @@
           target="_blank"
           class="ml-3 px-3 py-2 rounded border-2 border-transparent text-indigo-600 transition-colors"
         >
-          Visitez la source originale
+          View Original Source
         </a>
       </div>
     </div>
